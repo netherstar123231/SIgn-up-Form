@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" >
+    <script src ="/script.js"></script>
+</head>
+<body>
+    <div class="background-image">
+      <div class="sidebar-image">
+        <img src="odin.png" class="odin-pic">
+        <h1 class="odin">Odin</h1>
+      </div>
+      <div class="credit">Photo <a class="cred" href="https://unsplash.com/@von_co" target="blank">Ivana Cajina</a> on <a class="cred" href="https://unsplash.com/" target="blank">Unsplash</a></div>
+    </div>
+    <div class="interface">
+     <div class="message"><div class="message1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br><br> You know you want to.</div></div>
+     <form   class="input">
+        
+            <div style="font-size: 3vh; font-weight: bold; margin-top: 1vh;margin-bottom:1vh;padding-left: 2.5vw;"> Let's do this!</div>
+            <br>
+                <div>
+         
+                    <label for="first" class="first">First Name</label>
+                    <input type="text" id="first" placeholder="First Name" required ><span class="firstError"></span></input>
+                    
+                    <label for="last"  >Last Name</label>
+                    <input type="text" id="last" placeholder="Last Name" required> <span class="lastError"></span>  </input>
+                          
+                </div>
+                <div>
+                    <label for="email" >Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address" required></input>
+                    
+                    <label for="number" >Phone Number</label>
+                    <input type="tel" id="number" placeholder="Phone number (Eg. 1234-123-1234) " pattern="[0-9]{4}\-[0-9]{3}\-[0-9]{3}" required ><span class="numberError"></span></input>
+                    
+                </div>
+                <div>
+                    <label for="password" >Password</label>
+                    <input type="password" id="password" placeholder="Password" required><span class="passwordError"></span></input>
+                    
+                    <label for="confirm-password" >Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required></input>
+         
+                </div>
+                <div class="button">
+                <button type="submit" value="Submit">Create Account</button>
+                </div>
+        
+     </form>
+     <div class="create">
+        
+        <p>Already have an account? <a>Log in</a></p>
+     </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@font-face {
+    font-family: odin;
+    src: url(Norse-Bold.otf);
+  }
+:root{
+
+}
+body,.background-image,.interface,.sidebar-image{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+.background-image{
+    width: 75vw;
+    background-image: url("space.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    
+}
+.sidebar-image{
+    width: calc(calc(75/175)*100vw);
+    height: 20vh;
+    position: absolute;
+    top: 20vh;
+    justify-content: center;
+    background-color: rgba(211, 211,211,.1)
+}
+.odin{
+   
+   font-size: 10vh;
+   color: white;
+   font-family: "odin";
+}
+.credit{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+.cred{
+    color: white;
+}
+.interface{
+flex-direction: column;    
+}
+.message,.input,.create{
+    box-sizing: border-box;
+    flex-direction: column;
+    width: auto;
+    height: calc((100/3)*100vh);
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(248, 245, 245);
+    position: relative;
+}
+
+.input{
+    background-color: white;
+}  
+.message1{
+    margin: 0px auto;
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 2.5vw;
+    white-space: pre-wrap
+
+
+}
+input{
+    box-sizing: border-box;
+    width: 15vw;
+    height: 3.5vh;
+}
+form.input > div > input{
+    margin-left: 2.5vw;
+    margin-bottom: 5vh;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+form.input>div{
+    position: relative;
+}
+label{
+    position: absolute;
+    top: -2vh;
+    left: 2.7vw;
+    visibility: hidden;
+    
+}
+label[for="last"],label[for="number"],label[for="confirm-password"]{
+    left: 20.5vw;
+}
+
+input[type]{
+    padding-left: 1vh;
+    border: 1px solid black;
+    
+}
+body input[type]:focus{
+    outline: none;
+    border:  3px solid royalblue;
+    box-shadow: 4px 4px 4px lightgray;
+}
+
+button{
+    height: 5vh;
+    width: 12vw;
+    border-radius: 8px;
+    background-color: royalblue;
+    color: white;
+    border: 3px solid royalblue;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 3vh;
+    box-shadow: 0px 4px 4px lightgray;
+
+}
+.create{
+    padding-left: 2.5vw;
+}
+
+button:hover{
+    background-color: white;
+    color: royalblue;
+}
+
+button:active
+{
+    background-color: blue;
+    color: white;
+}
+
+a{
+    color: royalblue;
+}
+
+a:hover{
+   color: blue;
+   text-decoration: underline;
+}
+
+.button{
+    background-color:  rgb(248, 245, 245);
+    box-shadow: inset 0px 1px 3px rgb(204, 203, 203);
+}
+
+button{
+    margin-left: 2.5vw;
+}
+
+
+.firstError,.lastError,.passwordError,.numberError{
+    width: 100%;
+    padding: 0;
+    color: red;
+    position: absolute;
+    top: 4vh;
+    
+
+}
+
+.firstError,.passwordError{
+    left: 3vw;
+}
+
+.lastError,.numberError{
+    left: 20.7vw;
+}
